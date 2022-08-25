@@ -3,7 +3,7 @@ package com.example.ex_springboot2;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+// @SpringBootApplication
 public class ExSpringboot2Application {
 
     public static void main(String[] args) {
