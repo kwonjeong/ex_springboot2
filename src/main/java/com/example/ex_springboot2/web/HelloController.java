@@ -22,19 +22,5 @@ public class HelloController {
                                      @RequestParam("amount") int amount){
         return new HelloResponseDto(name, amount);
     }
-
-    private Map<String, UserProfile> userMap;
-
-    @PostConstruct
-    public void init(){
-        userMap = new HashMap<String, UserProfile>();
-        userMap.put("1", new UserProfile("email", "password", "cat", ""));
-        userMap.put("2", new UserProfile("email", "", "kwonjeong", "201"));
-    }
-
-    @GetMapping("/user/{id}")
-    public UserProfile getUserProfile(@PathVariable String id){
-        return userMap.get(id);
-    }
 }
 
